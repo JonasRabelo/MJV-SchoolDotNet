@@ -1,0 +1,14 @@
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\bin\Debug\net7.0\SegundaSemana.exe
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\bin\Debug\net7.0\SegundaSemana.deps.json
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\bin\Debug\net7.0\SegundaSemana.runtimeconfig.json
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\bin\Debug\net7.0\SegundaSemana.dll
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\bin\Debug\net7.0\SegundaSemana.pdb
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\SegundaSemana.GeneratedMSBuildEditorConfig.editorconfig
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\SegundaSemana.AssemblyInfoInputs.cache
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\SegundaSemana.AssemblyInfo.cs
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.CoreCompileInputs.cache
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\SegundaSemana.dll
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\refint\SegundaSemana.dll
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\SegundaSemana.pdb
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\SegundaSemana.genruntimeconfig.cache
+G:\MJV SCHOOL\SegundaSemana\SegundaSemana\obj\Debug\net7.0\ref\SegundaSemana.dll
