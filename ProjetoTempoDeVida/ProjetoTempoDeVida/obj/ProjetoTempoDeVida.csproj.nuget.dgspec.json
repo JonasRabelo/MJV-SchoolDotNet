@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj": {}
+    "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj": {}
   },
   "projects": {
-    "G:\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj": {
+    "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
+        "projectUniqueName": "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
         "projectName": "ProjetoTempoDeVida",
-        "projectPath": "G:\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
+        "projectPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
         "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-        "outputPath": "G:\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\obj\\",
+        "outputPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

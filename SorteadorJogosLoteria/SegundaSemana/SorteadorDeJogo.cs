@@ -1,51 +1,75 @@
-﻿namespace SegundaSemana
+﻿using System.Text;
+
+namespace SegundaSemana
 {
     class SorteadorDeJogo
     {
-        public int[] NumerosLoteria = new int[60];
+        public int[] NumerosLoteria;
 
-
-        public SorteadorDeJogo()
+        private void PreencherLista(int limite)
         {
-            PreencherLista();
-        }
-
-        private void PreencherLista()
-        {
+            NumerosLoteria = new int[limite];
             for (int i = 0; i < NumerosLoteria.Length; i++)
             {
                 NumerosLoteria[i] = i + 1;
             }
         }
 
-        public string SortearJogo()
+        public List<int> JogarMegaSena()
+        {
+            PreencherLista(60);
+            return SortearJogo(6);
+        }
+
+        public List<int> JogarLotofacil()
+        {
+            PreencherLista(25);
+            return SortearJogo(15);
+        }
+
+        public List<int> JogarQuina()
+        {
+            PreencherLista(80);
+            return SortearJogo(5);
+        }
+
+        public List<int> JogarLotomania()
+        {
+            PreencherLista(100);
+            return SortearJogo(50);
+        }
+
+        public List<int> SortearJogo(int qtdNumeros)
         {
             Random random = new Random();
-            int[] jogo = new int[6];
-
-            for (int i = 0; i < 6; i++)
+            List<int> jogo = new List<int>();
+            for (int i = 0; i < qtdNumeros; i++)
             {
                 while (true)
                 {
                     int numeroEscolhido = NumerosLoteria[random.Next(0, NumerosLoteria.Length)];
 
-                    if (jogo.Length > 0)
+                    if (jogo.Count() > 0)
                     {
                         if (!jogo.Contains(numeroEscolhido))
                         {
-                            jogo[i] = numeroEscolhido;
+                            jogo.Add(numeroEscolhido);
                             break;
                         }
                     }
                     else
                     {
-                        jogo[i] = numeroEscolhido;
+                        jogo.Add(numeroEscolhido);
                     }
                 }
-                
+
             }
-            Array.Sort(jogo);
-            return string.Join(", ", jogo);
+            jogo.Sort();
+            return jogo;
         }
+
+
+
+
     }
 }

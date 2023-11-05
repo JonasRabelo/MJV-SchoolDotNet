@@ -1,0 +1,14 @@
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\bin\Debug\net7.0\Aula3110.exe
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\bin\Debug\net7.0\Aula3110.deps.json
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\bin\Debug\net7.0\Aula3110.runtimeconfig.json
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\bin\Debug\net7.0\Aula3110.dll
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\bin\Debug\net7.0\Aula3110.pdb
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\Aula3110.GeneratedMSBuildEditorConfig.editorconfig
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\Aula3110.AssemblyInfoInputs.cache
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\Aula3110.AssemblyInfo.cs
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\Aula3110.csproj.CoreCompileInputs.cache
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\Aula3110.dll
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\refint\Aula3110.dll
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\Aula3110.pdb
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\Aula3110.genruntimeconfig.cache
+G:\MJV SCHOOL\MJV SCHOOL\Aula3110\Aula3110\obj\Debug\net7.0\ref\Aula3110.dll
