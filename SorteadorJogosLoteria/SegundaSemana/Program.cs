@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using SegundaSemana;
-
+﻿using SegundaSemana;
 
 
 SorteadorDeJogo s = new SorteadorDeJogo();
@@ -172,8 +170,9 @@ static Jogador EscolhaDoJogo(Jogador jogador)
 
     while (true)
     {
-        SorteadorDeJogo s = new SorteadorDeJogo();
+        LotericaSorteador.Loterica s = new LotericaSorteador.Loterica();
         Console.Clear();
+        Console.WriteLine($"O seu saldo atual é de R$ {jogador.Saldo.ToString("C2")}\n");
         Console.WriteLine("Escolha um jogo da loteria:");
         Console.WriteLine("1. Mega-Sena");
         Console.WriteLine("2. Lotofácil");

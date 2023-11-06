@@ -1,0 +1,11 @@
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\bin\Debug\net7.0\LotericaSorteador.deps.json
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\bin\Debug\net7.0\LotericaSorteador.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\bin\Debug\net7.0\LotericaSorteador.pdb
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\LotericaSorteador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\LotericaSorteador.AssemblyInfoInputs.cache
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\LotericaSorteador.AssemblyInfo.cs
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\LotericaSorteador.csproj.CoreCompileInputs.cache
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\LotericaSorteador.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\refint\LotericaSorteador.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\LotericaSorteador.pdb
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\LotericaSorteador\obj\Debug\net7.0\ref\LotericaSorteador.dll

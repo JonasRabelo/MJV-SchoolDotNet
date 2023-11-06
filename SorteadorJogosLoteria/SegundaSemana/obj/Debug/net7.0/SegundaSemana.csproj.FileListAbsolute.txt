@@ -26,3 +26,21 @@ G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\re
 G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.pdb
 G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.genruntimeconfig.cache
 G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\ref\SegundaSemana.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\SegundaSemana.exe
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\SegundaSemana.deps.json
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\SegundaSemana.runtimeconfig.json
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\SegundaSemana.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\SegundaSemana.pdb
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.AssemblyInfoInputs.cache
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.AssemblyInfo.cs
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.CoreCompileInputs.cache
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\refint\SegundaSemana.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.pdb
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.genruntimeconfig.cache
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\ref\SegundaSemana.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\LotericaSorteador.dll
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\LotericaSorteador.pdb
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.AssemblyReference.cache
+C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.CopyComplete

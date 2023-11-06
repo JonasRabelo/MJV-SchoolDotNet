@@ -1,30 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "LotericaSorteador/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/LotericaSorteador.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LotericaSorteador.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LotericaSorteador/1.0.0": {
+      "type": "project",
+      "path": "../LotericaSorteador/LotericaSorteador.csproj",
+      "msbuildProject": "../LotericaSorteador/LotericaSorteador.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "LotericaSorteador >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\jonas\\.nuget\\packages\\": {},
+    "C:\\Users\\SEAC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\MJV SCHOOL\\MJV SCHOOL\\SorteadorJogosLoteria\\SegundaSemana\\SegundaSemana.csproj",
+      "projectUniqueName": "C:\\Temp\\MJV-School---.Net\\SorteadorJogosLoteria\\SegundaSemana\\SegundaSemana.csproj",
       "projectName": "SegundaSemana",
-      "projectPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\SorteadorJogosLoteria\\SegundaSemana\\SegundaSemana.csproj",
-      "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
-      "outputPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\SorteadorJogosLoteria\\SegundaSemana\\obj\\",
+      "projectPath": "C:\\Temp\\MJV-School---.Net\\SorteadorJogosLoteria\\SegundaSemana\\SegundaSemana.csproj",
+      "packagesPath": "C:\\Users\\SEAC\\.nuget\\packages\\",
+      "outputPath": "C:\\Temp\\MJV-School---.Net\\SorteadorJogosLoteria\\SegundaSemana\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SEAC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Temp\\MJV-School---.Net\\SorteadorJogosLoteria\\LotericaSorteador\\LotericaSorteador.csproj": {
+              "projectPath": "C:\\Temp\\MJV-School---.Net\\SorteadorJogosLoteria\\LotericaSorteador\\LotericaSorteador.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -67,7 +90,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "SegundaSemana/1.0.0": {
+        "dependencies": {
+          "LotericaSorteador": "1.0.0"
+        },
         "runtime": {
           "SegundaSemana.dll": {}
+        }
+      },
+      "LotericaSorteador/1.0.0": {
+        "runtime": {
+          "LotericaSorteador.dll": {}
         }
       }
     }
   },
   "libraries": {
     "SegundaSemana/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LotericaSorteador/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
