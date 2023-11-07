@@ -4,20 +4,31 @@ using System.Text;
 using LotericaSorteador;
 namespace SegundaSemana
 {
-    public class Jogador : IJogador
+    public class Jogador
     {
-        private int id = 0;
+        public int id { get; set; }
         public string Nome { get; set; }
         public double Saldo { get; set; }
+        // Dicionário que armazena os jogos do jogador, com o nome do jogo como chave e os números selecionados como valor.
+        public Dictionary<string, List<int>> jogos { get; set; }
 
-        public Dictionary<string, List<int>> jogos = new Dictionary<string, List<int>>();
-
+        /// <summary>
+        /// Inicializa uma nova instância da classe Jogador com o nome e saldo iniciais.
+        /// </summary>
+        /// <param name="nome">Nome do jogador.</param>
+        /// <param name="saldo">Saldo inicial do jogador.</param>
         public Jogador(string nome, double saldo)
         {
+            id = 0;
             Nome = nome;
             Saldo = saldo;
+            jogos = new Dictionary<string, List<int>>();
         }
 
+        /// <summary>
+        /// Atualiza o saldo do jogador com base no nome do jogo.
+        /// </summary>
+        /// <param name="nomeJogo">Nome do jogo.</param>
         private void AtualizaSaldo(string nomeJogo)
         {
             if (nomeJogo == "Mega-Sena") Saldo -= 5.0;
@@ -26,6 +37,11 @@ namespace SegundaSemana
             else Saldo -= 3.0; // Lotomania
         }
 
+        /// <summary>
+        /// Verifica se o jogador tem saldo suficiente para jogar um determinado jogo.
+        /// </summary>
+        /// <param name="nomeJogo">Nome do jogo.</param>
+        /// <returns>Verdadeiro se o saldo for suficiente; caso contrário, falso.</returns>
         private bool VerificarSaldo(string nomeJogo)
         {
             if (nomeJogo == "Mega-Sena")
@@ -50,6 +66,11 @@ namespace SegundaSemana
             }
         }
 
+        /// <summary>
+        /// Adiciona um jogo ao dicionário de jogos do jogador, se o saldo for suficiente.
+        /// </summary>
+        /// <param name="nomeJogo">Nome do jogo.</param>
+        /// <param name="jogo">Lista de números do jogo.</param>
         public void AdicionarJogo(string nomeJogo, List<int> jogo)
         {
             if (VerificarSaldo(nomeJogo))
@@ -66,6 +87,9 @@ namespace SegundaSemana
             }
         }
 
+        /// <summary>
+        /// Lista os jogos do jogador no console.
+        /// </summary>
         public void ListarJogos()
         {
             if (jogos.Count == 0) Console.WriteLine("Você ainda não realizou nenhum jogo.");
@@ -80,6 +104,10 @@ namespace SegundaSemana
             }
         }
 
+        /// <summary>
+        /// Remove um jogo do dicionário de jogos do jogador com base na chave fornecida.
+        /// </summary>
+        /// <param name="chaveParaRemover">Chave do jogo a ser removido.</param>
         public void RemoverJogo(string chaveParaRemover)
         {
             if (jogos.ContainsKey(chaveParaRemover))
@@ -93,6 +121,11 @@ namespace SegundaSemana
             }
         }
 
+        /// <summary>
+        /// Converte uma lista de números em uma representação de string formatada.
+        /// </summary>
+        /// <param name="jogo">Lista de números do jogo.</param>
+        /// <returns>String formatada representando o jogo.</returns>
         public string ImprimirJogo(List<int> jogo)
         {
             StringBuilder sb = new StringBuilder();
@@ -103,6 +136,23 @@ namespace SegundaSemana
             }
             sb.Append(jogo[jogo.Count - 1] + " ]");
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// Adiciona saldo à conta do jogador.
+        /// </summary>
+        /// <param name="valor">O valor a ser adicionado ao saldo.</param>
+        public void AdicionarSaldo(double valor)
+        {
+            if (valor > 0)
+            {
+                Saldo += valor;
+                Console.WriteLine($"Saldo atualizado: {Saldo:C}");
+            }
+            else
+            {
+                Console.WriteLine("O valor a ser adicionado deve ser maior que zero.");
+            }
         }
     }
 }

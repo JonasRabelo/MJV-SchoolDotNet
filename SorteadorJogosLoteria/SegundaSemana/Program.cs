@@ -1,127 +1,70 @@
-﻿using SegundaSemana;
+﻿using LotericaSorteador;
+using System.Text.Json;
 
 namespace SegundaSemana
 {
     class Program
     {
+        static Loterica lot = new Loterica();
+        static Dictionary<string, Jogador> jogadores = new Dictionary<string, Jogador>();
         private static void Main(string[] args)
         {
-            Dictionary<string, Jogador> jogadores = new Dictionary<string, Jogador>();
-
-
-
-            LerDados(jogadores);
-            while (true)
+            try
             {
-                Console.Clear();
-                Console.WriteLine("============= Bem-vindo (a) a LotecaJSR =============");
-                Console.Write("Informe seu nome (Para sair digite '0'): ");
-                string nome = Console.ReadLine()!;
-
-
-                if (jogadores.ContainsKey(nome)) MenuPessal(jogadores[nome], jogadores);
-                else if (nome == '0'.ToString())
+                CarregarDados();
+                while (true)
                 {
-                    GuardarDados(jogadores);
-                    break;
-                }
-                else
-                {
-                    Console.Write("Informe quantos reais você tem para jogar: R$ ");
-                    double saldo = double.Parse(Console.ReadLine()!);
-                    MenuPessal(new Jogador(nome, saldo), jogadores);
-                }
+                    Console.Clear();
+                    Console.WriteLine("============= Bem-vindo (a) a LotecaJSR =============");
+                    Console.Write("Informe seu nome (Para sair digite '0'): ");
+                    string nome = Console.ReadLine()!;
 
-            }
-
-            static void LerDados(Dictionary<string, Jogador> jogadores)
-            {
-                string filePath = @"G:\\MJV SCHOOL\\MJV SCHOOL\\SorteadorJogosLoteria\\exemplo.txt";
-
-                // Cria um objeto StreamWriter para o arquivo especificado
-                if (File.Exists(filePath))
-                {
-                    try
+                    if (jogadores.ContainsKey(nome)) MenuPessoal(jogadores[nome]);
+                    else if (nome == '0'.ToString())
                     {
-                        using (StreamReader leitor = new StreamReader(filePath))
-                        {
-                            if (int.TryParse(leitor.ReadLine(), out int totalClasses))
-                            {
-                                for (int i = 0; i < totalClasses; i++)
-                                {
-                                    string nomeJogador = leitor.ReadLine()!;
-                                    double saldo = double.Parse(leitor.ReadLine()!);
-
-                                    Jogador jog = new Jogador(nomeJogador, saldo);
-                                    int totalJogosJogador = int.Parse(leitor.ReadLine()!);
-                                    for (int j = 0; j < totalJogosJogador; j++)
-                                    {
-                                        (string, List<int>) jogoFormatado = FormataJogo(leitor.ReadLine()!);
-                                        jog.jogos.Add(jogoFormatado.Item1, jogoFormatado.Item2);
-                                    }
-                                    jogadores.Add(jog.Nome, jog);
-                                }
-                            }
-                        }
+                        SalvarDados();
+                        break;
                     }
-                    catch (IOException e)
+                    else
                     {
-                        Console.WriteLine($"Erro ao ler o arquivo: {e.Message}");
+                        Console.Write("Informe quantos reais você tem para jogar: R$ ");
+                        double saldo = double.Parse(Console.ReadLine()!);
+                        MenuPessoal(new Jogador(nome, saldo));
                     }
-                }
-                else
-                {
-                    Console.WriteLine("O arquivo não existe.");
+
                 }
             }
-
-            static (string, List<int>) FormataJogo(string jogo)
+            catch (Exception ex)
             {
-                List<int> jogoFormatado = new List<int>();
-
-                string[] dadosJogo = jogo.Split(":");
-                string[] numerosJogo = dadosJogo[1].Replace(" [ ", "").Replace(" ]", "").Split(", ");
-
-                foreach (var dado in numerosJogo)
-                {
-                    jogoFormatado.Add(int.Parse(dado));
-                }
-
-                return (dadosJogo[0], jogoFormatado);
+                Console.WriteLine(ex.Message);
             }
 
-
-            static void GuardarDados(Dictionary<string, Jogador> jogadores)
+            static void SalvarDados()
             {
-                string filePath = @"G:\\MJV SCHOOL\\MJV SCHOOL\\SorteadorJogosLoteria\\exemplo.txt";
-
-                // Cria um objeto StreamWriter para o arquivo especificado
-                using (StreamWriter writer = new StreamWriter(filePath))
+                // Serializa os dados dos jogadores e salva em um arquivo JSON
+                string dadosParaSerializar = string.Empty;
+                foreach (var jog in jogadores.Values)
                 {
-                    if (jogadores != null)
+                    dadosParaSerializar += JsonSerializer.Serialize(jog) + " | ";
+                }
+                lot.SerializarDados(dadosParaSerializar);
+            }
+
+            static void CarregarDados()
+            {
+                // Lê os dados dos jogadores salvos e desserializa em Objetos.
+                string[] dados = lot.LerDados();
+                if (dados.Length > 0)
+                {
+                    foreach (string dado in dados)
                     {
-                        writer.WriteLine(jogadores.Count());
-
-                        foreach (Jogador jogador in jogadores.Values)
-                        {
-                            writer.WriteLine(jogador.Nome);
-                            writer.WriteLine(jogador.Saldo);
-                            writer.WriteLine(jogador.jogos.Count());
-                            if (jogador.jogos.Count() > 0)
-                            {
-                                foreach (var jogo in jogador.jogos)
-                                {
-                                    writer.WriteLine($"{jogo.Key}: {jogador.ImprimirJogo(jogo.Value)}");
-                                }
-                            }
-
-                        }
+                        Jogador j = JsonSerializer.Deserialize<Jogador>(dado)!;
+                        jogadores.Add(j.Nome, j);
                     }
                 }
             }
 
-
-            static void MenuPessal(Jogador jogador, Dictionary<string, Jogador> jogadores)
+            static void MenuPessoal(Jogador jogador)
             {
                 while (true)
                 {
@@ -130,11 +73,8 @@ namespace SegundaSemana
                     Console.WriteLine($"O seu saldo atual é de R$ {jogador.Saldo.ToString("C2")}");
                     Console.WriteLine($"Atualmente você tem {jogador.jogos.Count()} jogos feitos.");
 
-                    Console.WriteLine("O que deseja fazer: ");
-                    Console.WriteLine("1. Fazer um jogo");
-                    Console.WriteLine("2. Listar todos os jogos");
-                    Console.WriteLine("3. Deletar um jogo");
-                    Console.WriteLine("4. Sair desse perfil");
+                    Console.WriteLine("O que deseja fazer: \n1. Fazer um jogo\"2. Listar todos os jogos\n");
+                    Console.WriteLine("3. Deletar um jogo\n4. Adicionar Saldo\n5. Sair desse perfil");
 
                     int escolha;
                     if (int.TryParse(Console.ReadLine(), out escolha))
@@ -169,21 +109,16 @@ namespace SegundaSemana
                 }
             }
 
-
             static Jogador EscolhaDoJogo(Jogador jogador)
             {
 
                 while (true)
                 {
-                    LotericaSorteador.Loterica s = new LotericaSorteador.Loterica();
+                    Loterica s = new Loterica();
                     Console.Clear();
                     Console.WriteLine($"O seu saldo atual é de R$ {jogador.Saldo.ToString("C2")}\n");
                     Console.WriteLine("Escolha um jogo da loteria:");
-                    Console.WriteLine("1. Mega-Sena");
-                    Console.WriteLine("2. Lotofácil");
-                    Console.WriteLine("3. Quina");
-                    Console.WriteLine("4. Lotomania");
-                    Console.WriteLine("5. Voltar");
+                    Console.WriteLine("1. Mega-Sena\n2. Lotofácil\n3. Quina\n4. Lotomania\n5. Voltar");
 
                     int escolha;
                     List<int> jogoSorteado;
