@@ -1,0 +1,14 @@
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\bin\Debug\net7.0\Serializacao.exe
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\bin\Debug\net7.0\Serializacao.deps.json
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\bin\Debug\net7.0\Serializacao.runtimeconfig.json
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\bin\Debug\net7.0\Serializacao.dll
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\bin\Debug\net7.0\Serializacao.pdb
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\Serializacao.GeneratedMSBuildEditorConfig.editorconfig
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\Serializacao.AssemblyInfoInputs.cache
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\Serializacao.AssemblyInfo.cs
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\Serializacao.csproj.CoreCompileInputs.cache
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\Serializacao.dll
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\refint\Serializacao.dll
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\Serializacao.pdb
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\Serializacao.genruntimeconfig.cache
+G:\MJV SCHOOL\MJV SCHOOL\Serializacao\Serializacao\obj\Debug\net7.0\ref\Serializacao.dll

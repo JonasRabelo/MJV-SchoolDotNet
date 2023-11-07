@@ -1,14 +1,16 @@
-﻿using System.Text;
-
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using LotericaSorteador;
 namespace SegundaSemana
 {
-    class Jogador
+    public class Jogador : IJogador
     {
         private int id = 0;
         public string Nome { get; set; }
         public double Saldo { get; set; }
-        public Dictionary<string, List<int>> jogos = new Dictionary<string, List<int>>();
 
+        public Dictionary<string, List<int>> jogos = new Dictionary<string, List<int>>();
 
         public Jogador(string nome, double saldo)
         {
@@ -21,10 +23,7 @@ namespace SegundaSemana
             if (nomeJogo == "Mega-Sena") Saldo -= 5.0;
             else if (nomeJogo == "Lotofácil") Saldo -= 3.0;
             else if (nomeJogo == "Quina") Saldo -= 2.5;
-            else Saldo -= 3.0;//Lotomania
-
-
-
+            else Saldo -= 3.0; // Lotomania
         }
 
         private bool VerificarSaldo(string nomeJogo)
@@ -44,8 +43,8 @@ namespace SegundaSemana
                 if (Saldo >= 2.5) return true;
                 else return false;
             }
-            else  //(nomeJogo == "Lotomania")
-            { 
+            else
+            {
                 if (Saldo >= 3.0) return true;
                 else return false;
             }
@@ -65,7 +64,6 @@ namespace SegundaSemana
             {
                 Console.WriteLine("Saldo insuficiente.");
             }
-
         }
 
         public void ListarJogos()
@@ -93,7 +91,6 @@ namespace SegundaSemana
             {
                 Console.WriteLine($"Chave '{chaveParaRemover}' não encontrada no dicionário.");
             }
-
         }
 
         public string ImprimirJogo(List<int> jogo)
@@ -107,6 +104,5 @@ namespace SegundaSemana
             sb.Append(jogo[jogo.Count - 1] + " ]");
             return sb.ToString();
         }
-
     }
 }
