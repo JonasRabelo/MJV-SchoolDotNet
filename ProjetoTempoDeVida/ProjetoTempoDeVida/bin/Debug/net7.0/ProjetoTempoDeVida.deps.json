@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "ProjetoTempoDeVida/1.0.0": {
+        "dependencies": {
+          "CalculadoraTempoDeVida": "1.0.0"
+        },
         "runtime": {
           "ProjetoTempoDeVida.dll": {}
+        }
+      },
+      "CalculadoraTempoDeVida/1.0.0": {
+        "runtime": {
+          "CalculadoraTempoDeVida.dll": {}
         }
       }
     }
   },
   "libraries": {
     "ProjetoTempoDeVida/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CalculadoraTempoDeVida/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

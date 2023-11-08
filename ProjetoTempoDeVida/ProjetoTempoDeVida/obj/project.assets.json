@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "CalculadoraTempoDeVida/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CalculadoraTempoDeVida.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CalculadoraTempoDeVida.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CalculadoraTempoDeVida/1.0.0": {
+      "type": "project",
+      "path": "../CalculadoraTempoDeVida/CalculadoraTempoDeVida.csproj",
+      "msbuildProject": "../CalculadoraTempoDeVida/CalculadoraTempoDeVida.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "CalculadoraTempoDeVida >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jonas\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\CalculadoraTempoDeVida\\CalculadoraTempoDeVida.csproj": {
+              "projectPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\CalculadoraTempoDeVida\\CalculadoraTempoDeVida.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,0 +1,11 @@
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.deps.json
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.dll
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.pdb
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.GeneratedMSBuildEditorConfig.editorconfig
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.AssemblyInfoInputs.cache
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.AssemblyInfo.cs
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.csproj.CoreCompileInputs.cache
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.dll
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\refint\CalculadoraTempoDeVida.dll
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.pdb
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\ref\CalculadoraTempoDeVida.dll

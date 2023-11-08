@@ -26,3 +26,7 @@ G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\
 G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\ProjetoTempoDeVida.pdb
 G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.genruntimeconfig.cache
 G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ref\ProjetoTempoDeVida.dll
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.dll
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.pdb
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.csproj.AssemblyReference.cache
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.csproj.CopyComplete
