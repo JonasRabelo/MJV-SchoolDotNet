@@ -30,3 +30,21 @@ G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\
 G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.pdb
 G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.csproj.AssemblyReference.cache
 G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.csproj.CopyComplete
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\ProjetoTempoDeVida.exe
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\ProjetoTempoDeVida.deps.json
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\ProjetoTempoDeVida.runtimeconfig.json
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\ProjetoTempoDeVida.dll
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\ProjetoTempoDeVida.pdb
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.dll
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\bin\Debug\net7.0\CalculadoraTempoDeVida.pdb
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.csproj.AssemblyReference.cache
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.AssemblyInfoInputs.cache
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.AssemblyInfo.cs
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.csproj.CoreCompileInputs.cache
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.csproj.CopyComplete
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.dll
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\refint\ProjetoTempoDeVida.dll
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.pdb
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ProjetoTempoDeVida.genruntimeconfig.cache
+C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\ProjetoTempoDeVida\obj\Debug\net7.0\ref\ProjetoTempoDeVida.dll

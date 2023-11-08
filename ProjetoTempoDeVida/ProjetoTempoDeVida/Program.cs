@@ -58,9 +58,10 @@ internal class Program
 
         static void Menu(Pessoa pessoa)
         {
+            while (true) { 
             Console.Clear();
             Console.WriteLine($"Olá {pessoa.Nome}, seja bem-vindo (a)!");
-            Console.WriteLine($"Hoje é dia {DateTime.Now.Day}" +
+            Console.WriteLine($"Hoje é dia {DateTime.Now.Day} " +
                 $"de {calc.ObterNomeDoMes(DateTime.Now)} de {DateTime.Now.Year}.\n");
             Console.WriteLine("O que deseja realizar: ");
             Console.WriteLine("1 - Data de Falecimento com 100 anos de idade.\n" +
@@ -72,13 +73,20 @@ internal class Program
                 {
                     case 1:
                         Console.Clear();
-                        Console.WriteLine($"{pessoa.Nome}, atualmente você tem {calc.IdadeAtual(pessoa.DataNascimento)} anos.");
+                        Console.WriteLine($"Olá {pessoa.Nome}. Você está programado(a) para viver até o dia {(pessoa.DataNascimento.AddYears(100)).Day} " +
+                $"de {calc.ObterNomeDoMes(pessoa.DataNascimento.AddYears(100))} de {pessoa.DataNascimento.AddYears(100).Year}.");
                         break;
                     case 2:
                         Console.Clear();
-                        Console.WriteLine(calc.ImprimeInformacoes(pessoa.Nome, pessoa.DataNascimento));
+                        Console.WriteLine(calc.ImprimeInformacoes(pessoa.DataNascimento));
                         break;
                     case 3:
+                            Console.Clear();
+                            Console.WriteLine("Insira a data: (dd/mm/yyyy): ");
+                            if (DateTime.TryParse(Console.ReadLine(), out DateTime dt))
+                            {
+                                Console.WriteLine(calc.InfoEmDataAleatoria(pessoa.DataNascimento, dt));
+                            } 
                         break;
                     case 4:
                         if (!pessoas.ContainsKey(pessoa.Nome)) pessoas.Add(pessoa.Nome, pessoa);
@@ -94,19 +102,7 @@ internal class Program
             }
             Console.WriteLine("\nPressione qualquer tecla para continuar...");
             Console.ReadKey();
-
-
-            
-
-            Console.WriteLine("======================================================================");
-            // Imprime informações sobre o tempo restante de vida.
-            /*calc.ImprimirInformacoes(
-                calc.CalculaTotalDeDias(dataFalecimento, dt) * 24,
-                calc.CalculaTotalDeDias(dataFalecimento, dt),
-                calc.CalculaTotalDeSemanas(dataFalecimento, dt),
-                calc.CalculaTotalDeMeses(dataFalecimento, dt),
-                (int)((dataFalecimento - dt).TotalDays / 365.25)
-                );*/
+            }
         }
     }
 }

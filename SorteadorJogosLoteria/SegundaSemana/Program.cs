@@ -62,6 +62,7 @@ namespace SegundaSemana
                 string[] dados = lot.LerDados();
                 if (dados != null)
                 {
+                    Array.Resize(ref dados, dados.Length - 1);
                     foreach (string dado in dados)
                     {
                         Jogador j = JsonSerializer.Deserialize<Jogador>(dado)!;
@@ -80,9 +81,8 @@ namespace SegundaSemana
                     Console.Clear();
                     Console.WriteLine($"Olá, {jogador.Nome}. Seja Bem-vindo.");
                     Console.WriteLine($"O seu saldo atual é de R$ {jogador.Saldo.ToString("C2")}");
-                    Console.WriteLine($"Atualmente você tem {jogador.jogos.Count()} jogos feitos.");
-
-                    Console.WriteLine("O que deseja fazer: \n1. Fazer um jogo\n2. Listar todos os jogos\n");
+                    Console.WriteLine($"Atualmente você tem {jogador.jogos.Count()} jogos feitos.\n");
+                    Console.WriteLine("O que deseja fazer: \n1. Fazer um jogo\n2. Listar todos os jogos");
                     Console.WriteLine("3. Deletar um jogo\n4. Adicionar Saldo\n5. Sair desse perfil");
 
                     int escolha;

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Security.Cryptography;
+using System.Text;
 
 namespace CalculadoraTempoDeVida
 {
@@ -10,12 +11,12 @@ namespace CalculadoraTempoDeVida
             return new TempoDeVida
             (
                 (int)diferenca.TotalHours % 24,
-                ((diferenca.Days % 365) % 30) % 7,
-                (diferenca.Days % 365) / 7,
-                (diferenca.Days % 365) / 30,
-                diferenca.Days % 365
+                Convert.ToInt32(diferenca.Days % 365.25) % 30,
+                Convert.ToInt32(diferenca.Days % 365.25) / 30,
+                Convert.ToInt32(diferenca.Days % 365.25)
             );
         }
+
 
         /// <summary>
         /// Obtém o nome completo do mês em português a partir de uma data.
@@ -28,30 +29,78 @@ namespace CalculadoraTempoDeVida
             return data.ToString("MMMM", new System.Globalization.CultureInfo("pt-BR"));
         }
 
-        public string ConcatenandoInformaces(TempoDeVida tempoDeVida)
+        public string ConcatenandoInformaces(DateTime dataNascimento, DateTime dataAlvo)
         {
-            return $"- {tempoDeVida.Anos} anos\n- {tempoDeVida.Meses} meses\n" +
-                $"- {tempoDeVida.Semanas} semanas\n- {tempoDeVida.Dias} dias\n- {tempoDeVida.Horas} horas";
+            TimeSpan diferenca = dataAlvo - dataNascimento;
+            DateTime dataAtual = dataAlvo;
+
+            DateTime dataAux = new DateTime(dataAtual.Year, dataAtual.Month - 1, dataNascimento.Day, 0, 0, 0);
+            int dias = 0;
+            int meses = (int)((diferenca.Days % 365.25) / 30.44);
+            if (!(dataAlvo.Day == 14))
+            {
+                dias = Convert.ToInt32((dataAtual - dataAux).TotalDays);
+                if (dias > 30)
+                {
+                    dias = dataAlvo.Day - dataNascimento.Day;
+                }
+                else if (dias == 30)
+                {
+                    meses += 1;
+                    dias = 0;
+                }
+            }
+            if (dias <= 1)
+            {
+                return ($"{(int)(diferenca.Days / 365.25)} anos, {meses} meses, {dias} dia e {diferenca.Hours} horas.");
+            }
+            else if (meses <= 1)
+            {
+                return ($"{(int)(diferenca.Days / 365.25)} anos, {meses} mês, {dias} dias e {diferenca.Hours} horas.");
+            }
+            else
+            {
+                return ($"{(int)(diferenca.Days / 365.25)} anos, {meses} meses, {dias} dias e {diferenca.Hours} horas.");
+            }
         }
 
-        public string ImprimeInformacoes (string nome, DateTime dataNascimento)
+        public string ImprimeInformacoes(DateTime dataNascimento)
         {
-            
+
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("======================================================================");
-            sb.AppendLine($"Olá {nome}. Você está programado(a) para viver até o dia {(dataNascimento.AddYears(100)).Day}" +
-                $"de {ObterNomeDoMes(dataNascimento.AddYears(100))} de {dataNascimento.AddYears(100).Year}.");
-            sb.AppendLine("----------------------------------------------------------------------");
-            sb.AppendLine($"Idade atual: {IdadeAtual(dataNascimento)} anos.");
-            sb.AppendLine($"Você já viveu:");
-            sb.AppendLine(ConcatenandoInformaces(CalculaTempoDeVida(dataNascimento)));
-            sb.AppendLine("");
+            sb.AppendLine($"Hoje, dia {DateTime.Now.Day} de {ObterNomeDoMes(DateTime.Now)}" +
+                          $"de {DateTime.Now.Year}\n" + $"Sua Idade atual é de {IdadeAtual(dataNascimento, DateTime.Now)} anos.\nVocê já viveu: ");
+            sb.AppendLine(ConcatenandoInformaces(dataNascimento, DateTime.Now) + "\n");
             return sb.ToString();
         }
 
-        public int IdadeAtual(DateTime dataNascimento)
+        public string VerificaDataAtual(DateTime hoje, DateTime dataAux, DateTime dataNascimento)
         {
-            return DateTime.Now.Year - dataNascimento.Year;
+            if (hoje.Day == dataAux.Day && hoje.Month == dataAux.Month && hoje.Year == dataAux.Year)
+            {
+                return $"Hoje, dia {DateTime.Now.Day} de {ObterNomeDoMes(DateTime.Now)} de {DateTime.Now.Year}\n" +
+                    $"Sua idade atual é de {IdadeAtual(dataNascimento, DateTime.Now)} anos.\nVocê já viveu: ";
+            }
+            else
+            {
+                return $"No dia {dataAux.Day} de {ObterNomeDoMes(dataAux)} de {dataAux.Year}\n" +
+                    $"Você terá {IdadeAtual(dataNascimento, dataAux)} anos de idade.\nVocê já terá vivido: ";
+            }
+        }
+
+        public int IdadeAtual(DateTime dataNascimento, DateTime DataAux)
+        {
+            return DataAux.Year - dataNascimento.Year;
+        }
+
+        public string InfoEmDataAleatoria(DateTime dataNascimento, DateTime dataFutura)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("======================================================================");
+            sb.AppendLine(VerificaDataAtual(DateTime.Now, dataFutura, dataNascimento));
+            sb.AppendLine(ConcatenandoInformaces(dataNascimento, dataFutura) + "\n");
+            return sb.ToString();
         }
     }
 }
