@@ -20,7 +20,7 @@ namespace SegundaSemana
                     string nome = Console.ReadLine()!;
 
                     if (jogadores.ContainsKey(nome)) MenuPessoal(jogadores[nome]);
-                    else if (nome == '0'.ToString())
+                    else if (nome == "0")
                     {
                         SalvarDados();
                         break;
@@ -39,6 +39,9 @@ namespace SegundaSemana
                 Console.WriteLine(ex.Message);
             }
 
+            /// <summary>
+            /// Salva os dados dos jogadores em um arquivo JSON.
+            /// </summary>
             static void SalvarDados()
             {
                 // Serializa os dados dos jogadores e salva em um arquivo JSON
@@ -50,11 +53,14 @@ namespace SegundaSemana
                 lot.SerializarDados(dadosParaSerializar);
             }
 
+            /// <summary>
+            /// Carrega os dados dos jogadores a partir de um arquivo JSON.
+            /// </summary>
             static void CarregarDados()
             {
                 // Lê os dados dos jogadores salvos e desserializa em Objetos.
                 string[] dados = lot.LerDados();
-                if (dados.Length > 0)
+                if (dados != null)
                 {
                     foreach (string dado in dados)
                     {
@@ -64,6 +70,9 @@ namespace SegundaSemana
                 }
             }
 
+            /// <summary>
+            /// Controla o menu pessoal de um jogador, permitindo a realização de diversas ações.
+            /// </summary>
             static void MenuPessoal(Jogador jogador)
             {
                 while (true)
@@ -73,7 +82,7 @@ namespace SegundaSemana
                     Console.WriteLine($"O seu saldo atual é de R$ {jogador.Saldo.ToString("C2")}");
                     Console.WriteLine($"Atualmente você tem {jogador.jogos.Count()} jogos feitos.");
 
-                    Console.WriteLine("O que deseja fazer: \n1. Fazer um jogo\"2. Listar todos os jogos\n");
+                    Console.WriteLine("O que deseja fazer: \n1. Fazer um jogo\n2. Listar todos os jogos\n");
                     Console.WriteLine("3. Deletar um jogo\n4. Adicionar Saldo\n5. Sair desse perfil");
 
                     int escolha;
@@ -93,6 +102,14 @@ namespace SegundaSemana
                                 jogador.RemoverJogo(Console.ReadLine()!);
                                 break;
                             case 4:
+                                Console.Clear();
+                                Console.Write("Informe o valor a ser adicionado: ");
+                                if (double.TryParse(Console.ReadLine(), out double valorParaAdicionar))
+                                    jogador.AdicionarSaldo(valorParaAdicionar);
+                                else 
+                                    Console.WriteLine("Opção inválida. Tente novamente.");
+                                break;
+                            case 5:
                                 if (!jogadores.ContainsKey(jogador.Nome)) jogadores.Add(jogador.Nome, jogador);
                                 return;
                             default:
@@ -109,6 +126,9 @@ namespace SegundaSemana
                 }
             }
 
+            /// <summary>
+            /// Permite ao jogador escolher um jogo da loteria e adicioná-lo à sua lista de jogos.
+            /// </summary>
             static Jogador EscolhaDoJogo(Jogador jogador)
             {
 

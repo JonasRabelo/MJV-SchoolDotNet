@@ -28,3 +28,33 @@ G:\MJV SCHOOL\MJV SCHOOL\AulaMVC\AulaMVC\obj\Debug\net7.0\refint\AulaMVC.dll
 G:\MJV SCHOOL\MJV SCHOOL\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.pdb
 G:\MJV SCHOOL\MJV SCHOOL\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.genruntimeconfig.cache
 G:\MJV SCHOOL\MJV SCHOOL\AulaMVC\AulaMVC\obj\Debug\net7.0\ref\AulaMVC.dll
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\appsettings.Development.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\appsettings.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\AulaMVC.staticwebassets.runtime.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\AulaMVC.exe
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\AulaMVC.deps.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\AulaMVC.runtimeconfig.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\AulaMVC.dll
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\bin\Debug\net7.0\AulaMVC.pdb
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.AssemblyInfoInputs.cache
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.AssemblyInfo.cs
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.csproj.CoreCompileInputs.cache
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.RazorAssemblyInfo.cache
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.RazorAssemblyInfo.cs
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\staticwebassets\msbuild.AulaMVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\staticwebassets\msbuild.build.AulaMVC.props
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.AulaMVC.props
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.AulaMVC.props
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\staticwebassets.build.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\staticwebassets.development.json
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\scopedcss\bundle\AulaMVC.styles.css
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\scopedcss\projectbundle\AulaMVC.bundle.scp.css
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.dll
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\refint\AulaMVC.dll
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.pdb
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\AulaMVC.genruntimeconfig.cache
+C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\obj\Debug\net7.0\ref\AulaMVC.dll

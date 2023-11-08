@@ -1,0 +1,23 @@
+﻿@model IEnumerable<AulaMVC.Models.CarroModel>
+
+@{
+    ViewData["Title"] = "Lista de Carros";
+}
+
+<h2>@ViewData["Title"]</h2>
+<table border="1">
+    <tr>
+        <th>Modelo</th>
+        <th>Ano</th>
+    </tr>
+    @foreach (var carro in Model)
+    {
+        <tr>
+            <td>@carro.Modelo</td>
+            <td>@carro.Ano</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height:10px; background-color:#ddd;"></td>
+        </tr>
+    }
+</table>

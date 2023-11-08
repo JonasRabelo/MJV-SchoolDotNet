@@ -28,7 +28,7 @@ namespace AulaMVC
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Carro}/{action=Index}/{id?}");
 
             app.Run();
         }

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "db14eBXEId6Pw0dXcQp2We1Hn2Y+1aVMb1J9KqQQhrzJYgWugt4DoYcCikpyErKhEjL89ugjgI2Je1ZRAs+pgQ==",
+  "dgSpecHash": "tFp7ym03qRDgElWCImqZ6Vn81DgLswWFmkdBea/cnLKPuN2C+m2abzr7zAfQgxj2RFdHq7L1HtbAdwMzay2v1A==",
   "success": true,
-  "projectFilePath": "G:\\MJV SCHOOL\\MJV SCHOOL\\AulaMVC\\AulaMVC\\AulaMVC.csproj",
+  "projectFilePath": "C:\\Temp\\MJV-School---.Net\\AulaMVC\\AulaMVC\\AulaMVC.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jonas\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+    "C:\\Users\\SEAC\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
   ],
   "logs": []
 }
