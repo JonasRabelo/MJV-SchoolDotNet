@@ -5,16 +5,17 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Bem-Vindo @Model.Nome @Model.</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
 <form asp-action="ProcessandoFormulario" asp-controller="Home" method="post">
     <div class="form-group">
-        <label for="exampleInputEmail1">Habilidade</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira uma habilidade">
-        
+        <label for="habilidade">Habilidade</label>
+        <input type="text" class="form-control" id="habilidade" name="habilidade" placeholder="Insira uma habilidade">     
     </div>
-    <input type="submit" class="btn btn-primary" value="Enviar">Enviar</input>
+    <input type="submit" class="btn btn-primary" value="Enviar">
 </form>
-<partial name="_Habilidades" model="@Model.habilidades" />   
+
+<h2>Habilidades:</h2>
+@await Html.PartialAsync("_Habilidades", Model.habilidades)
