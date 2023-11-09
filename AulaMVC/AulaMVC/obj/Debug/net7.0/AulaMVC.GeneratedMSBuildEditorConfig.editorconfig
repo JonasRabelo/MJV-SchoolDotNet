@@ -9,45 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AulaMVC
 build_property.RootNamespace = AulaMVC
-build_property.ProjectDir = G:\MJV SCHOOL\MJV SCHOOL\AulaMVC\AulaMVC\
+build_property.ProjectDir = C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\MJV SCHOOL\MJV SCHOOL\AulaMVC\AulaMVC
+build_property.MSBuildProjectDirectory = C:\Temp\MJV-School---.Net\AulaMVC\AulaMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/Carro/Index.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/Carro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2Fycm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/Home/Index.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/Home/Privacy.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/Shared/Error.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/Shared/_Habilidades.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/Shared/_Habilidades.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IYWJpbGlkYWRlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/_ViewImports.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/_ViewStart.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/MJV SCHOOL/MJV SCHOOL/AulaMVC/AulaMVC/Views/Shared/_Layout.cshtml]
+[C:/Temp/MJV-School---.Net/AulaMVC/AulaMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-gh1b7g7qh1
