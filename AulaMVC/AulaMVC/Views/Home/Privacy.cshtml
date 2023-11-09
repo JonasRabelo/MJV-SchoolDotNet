@@ -1,6 +1,25 @@
-﻿@{
+﻿@model List<Usuario>
+
+@{
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th>SobreNome</th>
+        <th>Email</th>
+    </tr>
+@foreach (var usuario in Model)
+{
+    <tr>
+        <td>@usuario.Nome</td>
+        <td>@usuario.SobreNome</td>
+        <td>@usuario.Email</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="height:10px; background-color:#ddd;"></td>
+    </tr>
+    }
+</table>

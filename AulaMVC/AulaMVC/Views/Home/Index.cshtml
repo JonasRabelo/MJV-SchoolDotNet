@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Usuario
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,3 +8,13 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<form asp-action="ProcessandoFormulario" asp-controller="Home" method="post">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Habilidade</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Insira uma habilidade">
+        
+    </div>
+    <input type="submit" class="btn btn-primary" value="Enviar">Enviar</input>
+</form>
+<partial name="_Habilidades" model="@Model.habilidades" />   
