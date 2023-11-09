@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "MO2xg2L+amgUkVL1PrBFjUpV2BAISQpdoDTyk5FenpXBmrg0GoZz6KButwvZX0poQI0QsUBqC0kjBvbAWL8Cjg==",
+=======
+  "dgSpecHash": "aB0cos2PmJUI89EHdVvb0kERfmoFAThKUTDJYcs32zjyKmPVzl/2mYkmRjDSFCSvMkECiuuUjbX2i/95PTUAgQ==",
+>>>>>>> 0e35a6916e1262abd95e6a20de7c686d244048d3
   "success": true,
-  "projectFilePath": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\CalculadoraTempoDeVida\\CalculadoraTempoDeVida.csproj",
+  "projectFilePath": "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\CalculadoraTempoDeVida\\CalculadoraTempoDeVida.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

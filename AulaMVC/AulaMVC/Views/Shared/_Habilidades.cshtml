@@ -1,0 +1,21 @@
+﻿@model List<Habilidades>
+
+<table class="table table-striped table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Habilidades</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var habilidade in Model)
+        {
+            <tr>
+                <th scope="row">1</th>
+                <td>@habilidade.Nome</td>
+            </tr>
+        }
+        
+       
+    </tbody>
+</table>

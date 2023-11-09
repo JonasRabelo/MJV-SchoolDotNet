@@ -5,19 +5,6 @@ namespace CalculadoraTempoDeVida
 {
     public class Calculadora
     {
-        public TempoDeVida CalculaTempoDeVida(DateTime dataNascimento)
-        {
-            TimeSpan diferenca = DateTime.Now - dataNascimento;
-            return new TempoDeVida
-            (
-                (int)diferenca.TotalHours % 24,
-                Convert.ToInt32(diferenca.Days % 365.25) % 30,
-                Convert.ToInt32(diferenca.Days % 365.25) / 30,
-                Convert.ToInt32(diferenca.Days % 365.25)
-            );
-        }
-
-
         /// <summary>
         /// Obtém o nome completo do mês em português a partir de uma data.
         /// </summary>
@@ -37,7 +24,9 @@ namespace CalculadoraTempoDeVida
             DateTime dataAux = new DateTime(dataAtual.Year, dataAtual.Month - 1, dataNascimento.Day, 0, 0, 0);
             int dias = 0;
             int meses = (int)((diferenca.Days % 365.25) / 30.44);
-            if (!(dataAlvo.Day == 14))
+            int anos = (int)(diferenca.Days / 365.25);
+
+            if (!(dataAlvo.Day == dataNascimento.Day))
             {
                 dias = Convert.ToInt32((dataAtual - dataAux).TotalDays);
                 if (dias > 30)
@@ -46,21 +35,30 @@ namespace CalculadoraTempoDeVida
                 }
                 else if (dias == 30)
                 {
-                    meses += 1;
+                    if (meses == 12)
+                    {
+                        meses = 0;
+                        anos += 1; 
+                    }
+                    else
+                    {
+                        meses += 1;
+                    }
+                    
                     dias = 0;
                 }
             }
             if (dias <= 1)
             {
-                return ($"{(int)(diferenca.Days / 365.25)} anos, {meses} meses, {dias} dia e {diferenca.Hours} horas.");
+                return ($"{anos} anos, {meses} meses, {dias} dia e {diferenca.Hours} horas.");
             }
             else if (meses <= 1)
             {
-                return ($"{(int)(diferenca.Days / 365.25)} anos, {meses} mês, {dias} dias e {diferenca.Hours} horas.");
+                return ($"{anos} anos, {meses} mês, {dias} dias e {diferenca.Hours} horas.");
             }
             else
             {
-                return ($"{(int)(diferenca.Days / 365.25)} anos, {meses} meses, {dias} dias e {diferenca.Hours} horas.");
+                return ($"{anos} anos, {meses} meses, {dias} dias e {diferenca.Hours} horas.");
             }
         }
 
@@ -91,7 +89,8 @@ namespace CalculadoraTempoDeVida
 
         public int IdadeAtual(DateTime dataNascimento, DateTime DataAux)
         {
-            return DataAux.Year - dataNascimento.Year;
+            //return DataAux.Year - dataNascimento.Year;
+            return (int)((DataAux - dataNascimento).Days / 365.25);
         }
 
         public string InfoEmDataAleatoria(DateTime dataNascimento, DateTime dataFutura)

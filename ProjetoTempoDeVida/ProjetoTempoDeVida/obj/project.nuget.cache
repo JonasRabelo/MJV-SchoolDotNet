@@ -1,8 +1,12 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "ETDsJFoqbuKf4PQ7HK1Fe5WRars90OJcifK+t6iUcDryPXlhhMA/Wo71Hm8xBfED+CEk/cM2ilhCR7Cavkmcsw==",
+=======
+  "dgSpecHash": "TgtKNqSfTIS8ehVAL7e11RL+L1xXXCAF9G5boRqHdodGarBKkpw24mK4g/+fByU3CpO2qNAz7oTXKSTqSPKPNw==",
+>>>>>>> 0e35a6916e1262abd95e6a20de7c686d244048d3
   "success": true,
-  "projectFilePath": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
+  "projectFilePath": "G:\\MJV SCHOOL\\MJV SCHOOL\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
