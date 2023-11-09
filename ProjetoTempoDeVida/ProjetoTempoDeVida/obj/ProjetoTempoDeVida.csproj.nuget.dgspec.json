@@ -10,14 +10,14 @@
         "projectUniqueName": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\CalculadoraTempoDeVida\\CalculadoraTempoDeVida.csproj",
         "projectName": "CalculadoraTempoDeVida",
         "projectPath": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\CalculadoraTempoDeVida\\CalculadoraTempoDeVida.csproj",
-        "packagesPath": "C:\\Users\\Manutenção\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\SEAC\\.nuget\\packages\\",
         "outputPath": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\CalculadoraTempoDeVida\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Manutenção\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SEAC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -70,14 +70,14 @@
         "projectUniqueName": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
         "projectName": "ProjetoTempoDeVida",
         "projectPath": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\ProjetoTempoDeVida.csproj",
-        "packagesPath": "C:\\Users\\Manutenção\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\SEAC\\.nuget\\packages\\",
         "outputPath": "C:\\Temp\\MJV-School---.Net\\ProjetoTempoDeVida\\ProjetoTempoDeVida\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Manutenção\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SEAC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
