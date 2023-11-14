@@ -117,9 +117,6 @@ namespace Aula13_11.Controllers
                 TempData["MensagemErro"] = $"Ops, ocorreu um erro: {ex.Message}";
                 return RedirectToAction("ListarUsuario");
             }
-
-
-
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

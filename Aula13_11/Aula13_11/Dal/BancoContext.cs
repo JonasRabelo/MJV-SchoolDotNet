@@ -31,7 +31,7 @@ namespace Aula13_11.Dal
                         usuario.Id = Convert.ToInt32(reader["Id"]);
                         if (!reader.IsDBNull(1)) usuario.Nome = reader.GetString(1);
                         if (!reader.IsDBNull(2)) usuario.CPF = reader.GetString(2);
-                        if (!reader.IsDBNull(3)) usuario.genero = ConverterStringParaGenero(reader.GetString(3));
+                        if (!reader.IsDBNull(3)) usuario.genero = reader.GetString(3) == "Masculino"? Genero.Masculino : Genero.Feminino;
                         if (!reader.IsDBNull(4)) usuario.Email = reader.GetString(4);
                         if (!reader.IsDBNull(5)) usuario.Telefone = reader.GetString(5);
                         listaUsuarios.Add(usuario);
@@ -58,7 +58,7 @@ namespace Aula13_11.Dal
 
                     cmd.Parameters.AddWithValue("@nome", usuario.Nome);
                     cmd.Parameters.AddWithValue("@cpf", usuario.CPF);
-                    cmd.Parameters.AddWithValue("@genero", ConverterGeneroParaString(usuario.genero));
+                    cmd.Parameters.AddWithValue("@genero", usuario.genero);
                     cmd.Parameters.AddWithValue("@email", usuario.Email);
                     cmd.Parameters.AddWithValue("@telefone", usuario.Telefone);
 
@@ -100,7 +100,7 @@ namespace Aula13_11.Dal
                         usuarioEncontrado.Id = Convert.ToInt32(reader["Id"]);
                         if (!reader.IsDBNull(1)) usuarioEncontrado.Nome = reader.GetString(1);
                         if (!reader.IsDBNull(2)) usuarioEncontrado.CPF = reader.GetString(2);
-                        if (!reader.IsDBNull(3)) usuarioEncontrado.genero = ConverterStringParaGenero(reader.GetString(3));
+                        if (!reader.IsDBNull(3)) usuarioEncontrado.genero = reader.GetString(3) == "Masculino" ? Genero.Masculino : Genero.Feminino;
                         if (!reader.IsDBNull(4)) usuarioEncontrado.Email = reader.GetString(4);
                         if (!reader.IsDBNull(5)) usuarioEncontrado.Telefone = reader.GetString(5);
                     }
@@ -126,7 +126,7 @@ namespace Aula13_11.Dal
 
                     cmd.Parameters.AddWithValue("@Nome", usuario.Nome);
                     cmd.Parameters.AddWithValue("@CPF", usuario.CPF);
-                    cmd.Parameters.AddWithValue("@Genero", ConverterGeneroParaString(usuario.genero));
+                    cmd.Parameters.AddWithValue("@Genero", usuario.genero);
                     cmd.Parameters.AddWithValue("@Email", usuario.Email);
                     cmd.Parameters.AddWithValue("@Telefone", usuario.Telefone);
                     cmd.Parameters.AddWithValue("@id", usuario.Id);
@@ -167,16 +167,6 @@ namespace Aula13_11.Dal
         }
 
 
-        private Genero ConverterStringParaGenero(string genero)
-        {
-            if (genero == "Masculino" || genero == "0") return Genero.Masculino;
-            return Genero.Feminino;
-        }
-
-        private string ConverterGeneroParaString(Genero genero)
-        {
-            if (genero == Genero.Masculino) return "Masculino";
-            return "Feminino";
-        }
+        
     }
 }
