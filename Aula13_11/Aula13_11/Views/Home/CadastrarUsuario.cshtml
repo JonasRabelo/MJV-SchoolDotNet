@@ -1,0 +1,46 @@
+﻿@using Aula13_11.Enums;
+@model UsuarioModel
+
+@{
+    ViewData["Title"] = "Cadastrar Usuário";
+}
+<form asp-controller="Home" asp-action="CadastrarUsuario" method="post" class="Quadro-Tela  ">
+
+    <div class="form-group" style="margin: 10px 0px">
+        <label for="nome">Nome:</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do usuário">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+    <div class="form-group" style="margin: 10px 0px">
+        <label for="sobrenome">CPF:</label>
+        <input type="text" asp-for="CPF" class="form-control" placeholder="Ex.: 123.456.789-00">
+        @Html.ValidationMessageFor(x => x.CPF)
+    </div>
+    <div class="form-group" style="margin: 10px 0px">
+        <label for="perfil">Gênero: </label>
+        <select asp-for="genero" class="form-control">
+            <option value="">Selecione</option>
+            <option value="@Genero.Feminino">Feminino</option>
+            <option value="@Genero.Masculino">Masculino</option>
+        </select>
+        @Html.ValidationMessageFor(x => x.genero)
+    </div>
+    <div class="form-group" style="margin: 10px 0px">
+        <label for="sobrenome">E-mail:</label>
+        <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do usuário">
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+    <div class="form-group" style="margin: 10px 0px">
+        <label for="sobrenome">Telefone:</label>
+        <input type="text" asp-for="Telefone" class="form-control" placeholder="Digite o telefone do usuário">
+        @Html.ValidationMessageFor(x => x.Telefone)
+    </div>
+    
+
+    <div class="d-grid gap-2" style="margin: 5px 0px">
+        <button type="submit" class="btn btn-primary d-lg-block">Adicionar</button>
+    </div>
+    <div class="d-grid gap-2" style="margin: 5px 0px">
+        <a class="btn btn-secondary btn-block" asp-controller="Home" asp-action="Index" role="button">Voltar</a>
+    </div>
+</form>
