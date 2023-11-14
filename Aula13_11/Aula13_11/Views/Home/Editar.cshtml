@@ -27,7 +27,7 @@
             <option value="@Genero.Feminino">Feminino</option>
             <option value="@Genero.Masculino">Masculino</option>
         </select>
-        @Html.ValidationMessageFor(x => x.genero)
+        @Html.ValidationMessageFor(x => x.genero, "Por favor, selecione um gênero.")
     </div>
     <div class="form-group" style="margin: 10px 0px">
         <label for="sobrenome">E-mail:</label>

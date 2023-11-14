@@ -12,58 +12,69 @@ namespace Aula13_11.Dal
         {
             List<UsuarioModel> listaUsuarios = new List<UsuarioModel>();
             string query = "select * from Usuarios";
-            using (SqlConnection connection = new SqlConnection(strConnection))
+            try
             {
-
-                SqlCommand cmd = new SqlCommand(query, connection);
-
-                connection.Open();
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                UsuarioModel usuario;
-                while (reader.Read())
+                using (SqlConnection connection = new SqlConnection(strConnection))
                 {
-                    usuario = new UsuarioModel();
 
-                    usuario.Id = Convert.ToInt32(reader["Id"]);
-                    if (!reader.IsDBNull(1)) usuario.Nome = reader.GetString(1);
-                    if (!reader.IsDBNull(2)) usuario.CPF = reader.GetString(2);
-                    if (!reader.IsDBNull(3)) usuario.genero = ConverterStringParaGenero(reader.GetString(3));
-                    if (!reader.IsDBNull(4)) usuario.Email = reader.GetString(4);
-                    if (!reader.IsDBNull(5)) usuario.Telefone = reader.GetString(5);
-                    listaUsuarios.Add(usuario);
+                    SqlCommand cmd = new SqlCommand(query, connection);
+
+                    connection.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    UsuarioModel usuario;
+                    while (reader.Read())
+                    {
+                        usuario = new UsuarioModel();
+
+                        usuario.Id = Convert.ToInt32(reader["Id"]);
+                        if (!reader.IsDBNull(1)) usuario.Nome = reader.GetString(1);
+                        if (!reader.IsDBNull(2)) usuario.CPF = reader.GetString(2);
+                        if (!reader.IsDBNull(3)) usuario.genero = ConverterStringParaGenero(reader.GetString(3));
+                        if (!reader.IsDBNull(4)) usuario.Email = reader.GetString(4);
+                        if (!reader.IsDBNull(5)) usuario.Telefone = reader.GetString(5);
+                        listaUsuarios.Add(usuario);
+                    }
                 }
-
-
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine($"Error in ListarUsuarios: {ex.Message}");
             }
             return listaUsuarios;
         }
 
         public bool InserirUsuario(UsuarioModel usuario)
         {
-            using (SqlConnection connection = new SqlConnection(strConnection))
+            try
             {
+                using (SqlConnection connection = new SqlConnection(strConnection))
+                {
+                    SqlCommand cmd = new SqlCommand();
+                    cmd.CommandText = "insert into Usuarios (nome, cpf, genero, email, telefone) values (@nome, @cpf, @genero, @email, @telefone)";
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.Connection = connection;
 
+                    cmd.Parameters.AddWithValue("@nome", usuario.Nome);
+                    cmd.Parameters.AddWithValue("@cpf", usuario.CPF);
+                    cmd.Parameters.AddWithValue("@genero", ConverterGeneroParaString(usuario.genero));
+                    cmd.Parameters.AddWithValue("@email", usuario.Email);
+                    cmd.Parameters.AddWithValue("@telefone", usuario.Telefone);
 
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "insert into Usuarios (nome, cpf, genero, email, telefone) values (@nome, @cpf, @genero, @email, @telefone)";
-                cmd.CommandType = System.Data.CommandType.Text;
-                cmd.Connection = connection;
+                    cmd.Connection.Open();
 
-                cmd.Parameters.AddWithValue("@nome", usuario.Nome);
-                cmd.Parameters.AddWithValue("@cpf", usuario.CPF);
-                cmd.Parameters.AddWithValue("@genero", ConverterGeneroParaString(usuario.genero));
-                cmd.Parameters.AddWithValue("@email", usuario.Email);
-                cmd.Parameters.AddWithValue("@telefone", usuario.Telefone);
+                    int linhasAfetadas = cmd.ExecuteNonQuery();
 
-                cmd.Connection.Open();
+                    cmd.Connection.Close();
 
-                int linhasAfetadas = cmd.ExecuteNonQuery();
-
-                cmd.Connection.Close();
-
-                return linhasAfetadas > 0;
+                    return linhasAfetadas > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in InserirUsuario: {ex.Message}");
+                return false;
             }
         }
 
@@ -71,26 +82,33 @@ namespace Aula13_11.Dal
         {
             UsuarioModel usuarioEncontrado = new UsuarioModel();
             string query = "SELECT Id, nome, cpf, genero, email, telefone FROM Usuarios Where Id = @id";
-            using (SqlConnection connection = new SqlConnection(strConnection))
+            try
             {
-
-                SqlCommand cmd = new SqlCommand(query, connection);
-                cmd.Parameters.AddWithValue("@id", id);
-
-                connection.Open();
-
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
+                using (SqlConnection connection = new SqlConnection(strConnection))
                 {
 
-                    usuarioEncontrado.Id = Convert.ToInt32(reader["Id"]);
-                    if (!reader.IsDBNull(1)) usuarioEncontrado.Nome = reader.GetString(1);
-                    if (!reader.IsDBNull(2)) usuarioEncontrado.CPF = reader.GetString(2);
-                    if (!reader.IsDBNull(3)) usuarioEncontrado.genero = ConverterStringParaGenero(reader.GetString(3));
-                    if (!reader.IsDBNull(4)) usuarioEncontrado.Email = reader.GetString(4);
-                    if (!reader.IsDBNull(5)) usuarioEncontrado.Telefone = reader.GetString(5);
+                    SqlCommand cmd = new SqlCommand(query, connection);
+                    cmd.Parameters.AddWithValue("@id", id);
+
+                    connection.Open();
+
+                    SqlDataReader reader = cmd.ExecuteReader();
+
+                    if (reader.Read())
+                    {
+
+                        usuarioEncontrado.Id = Convert.ToInt32(reader["Id"]);
+                        if (!reader.IsDBNull(1)) usuarioEncontrado.Nome = reader.GetString(1);
+                        if (!reader.IsDBNull(2)) usuarioEncontrado.CPF = reader.GetString(2);
+                        if (!reader.IsDBNull(3)) usuarioEncontrado.genero = ConverterStringParaGenero(reader.GetString(3));
+                        if (!reader.IsDBNull(4)) usuarioEncontrado.Email = reader.GetString(4);
+                        if (!reader.IsDBNull(5)) usuarioEncontrado.Telefone = reader.GetString(5);
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in BuscarUsuarioPorId: {ex.Message}");
             }
             return usuarioEncontrado;
         }
@@ -98,22 +116,30 @@ namespace Aula13_11.Dal
         public bool EditarUsuario(UsuarioModel usuario)
         {
             string query = "UPDATE Usuarios SET nome = @Nome, cpf = @CPF, genero = @Genero, email = @Email, telefone = @Telefone WHERE Id = @id";
-            
-            using (SqlConnection connection = new SqlConnection(strConnection))
+
+            try
             {
-                SqlCommand cmd = new SqlCommand(query, connection);
+                using (SqlConnection connection = new SqlConnection(strConnection))
+                {
+                    SqlCommand cmd = new SqlCommand(query, connection);
 
-                
-                cmd.Parameters.AddWithValue("@Nome", usuario.Nome);
-                cmd.Parameters.AddWithValue("@CPF", usuario.CPF);
-                cmd.Parameters.AddWithValue("@Genero", ConverterGeneroParaString(usuario.genero));
-                cmd.Parameters.AddWithValue("@Email", usuario.Email);
-                cmd.Parameters.AddWithValue("@Telefone", usuario.Telefone);
-                cmd.Parameters.AddWithValue("@id", usuario.Id);
 
-                connection.Open();
+                    cmd.Parameters.AddWithValue("@Nome", usuario.Nome);
+                    cmd.Parameters.AddWithValue("@CPF", usuario.CPF);
+                    cmd.Parameters.AddWithValue("@Genero", ConverterGeneroParaString(usuario.genero));
+                    cmd.Parameters.AddWithValue("@Email", usuario.Email);
+                    cmd.Parameters.AddWithValue("@Telefone", usuario.Telefone);
+                    cmd.Parameters.AddWithValue("@id", usuario.Id);
 
-                return cmd.ExecuteNonQuery() > 0;
+                    connection.Open();
+
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error in EditarUsuario: {ex.Message}");
+                return false;
             }
         }
 
@@ -121,15 +147,22 @@ namespace Aula13_11.Dal
         {
             string query = "DELETE FROM Usuarios WHERE Id = @id";
 
-            using (SqlConnection connection = new SqlConnection(strConnection))
+            try
             {
-                SqlCommand cmd = new SqlCommand(query, connection);
+                using (SqlConnection connection = new SqlConnection(strConnection))
+                {
+                    SqlCommand cmd = new SqlCommand(query, connection);
 
-                cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@id", id);
 
-                connection.Open();
+                    connection.Open();
 
-                return cmd.ExecuteNonQuery() > 0;
+                    return cmd.ExecuteNonQuery() > 0;
+                }
+            }catch (Exception ex)
+            {
+                Console.WriteLine($"Error in ApagarUsuario: {ex.Message}");
+                return false;
             }
         }
 

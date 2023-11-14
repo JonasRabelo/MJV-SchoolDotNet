@@ -52,7 +52,11 @@ body {
     justify-content: space-between;
 }
 
-    .menu-item a {
-        color: #000000;
-        text-decoration: none;
-    }
+.menu-item a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.field-validation-error{
+    color: #e01d1d;
+}
