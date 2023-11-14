@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j+deNe/KiD999qCCmLnkssLzrmOTNkPm0Ml0E+3kZSCarbJUYA4Dw/Eyo8+pom0ixRJLkuD2oa7g0uHw7I049g==",
+  "dgSpecHash": "nOL852phPR42Nwf8RVDGNt+asaVui57v9Rp6rT4sbtA9Jw0F1At2ENdSMT5JX/5GvQMHNx7g7QSQDdvAyPM2LQ==",
   "success": true,
-  "projectFilePath": "G:\\MJV SCHOOL\\MJV SCHOOL\\Aula13_11\\Aula13_11\\Aula13_11.csproj",
+  "projectFilePath": "G:\\MJV SCHOOL\\MJV SCHOOL\\Aula13_11\\Aula13_11\\AtividadeBancoDeDados.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\jonas\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

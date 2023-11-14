@@ -476,9 +476,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\MJV SCHOOL\\MJV SCHOOL\\Aula13_11\\Aula13_11\\Aula13_11.csproj",
-      "projectName": "Aula13_11",
-      "projectPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\Aula13_11\\Aula13_11\\Aula13_11.csproj",
+      "projectUniqueName": "G:\\MJV SCHOOL\\MJV SCHOOL\\Aula13_11\\Aula13_11\\AtividadeBancoDeDados.csproj",
+      "projectName": "AtividadeBancoDeDados",
+      "projectPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\Aula13_11\\Aula13_11\\AtividadeBancoDeDados.csproj",
       "packagesPath": "C:\\Users\\jonas\\.nuget\\packages\\",
       "outputPath": "G:\\MJV SCHOOL\\MJV SCHOOL\\Aula13_11\\Aula13_11\\obj\\",
       "projectStyle": "PackageReference",
