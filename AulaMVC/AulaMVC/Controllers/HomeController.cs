@@ -1,32 +1,37 @@
 ﻿using AulaMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Text.Json;
 
 namespace AulaMVC.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        Usuario usuario = new Usuario();
+        Usuario usuario;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+            usuario = new Usuario();
         }
 
-        public IActionResult Index(string habilidade)
+
+        public IActionResult Index()
         {
-            usuario.habilidades.Add(new Habilidades(habilidade));
-            return View(usuario);
+            usuario.habilidades = LerDados();
+            return View("Index", usuario);
         }
 
         [HttpPost]
-        public IActionResult ProcessandoFormulario(string hab)
+        public IActionResult ProcessandoFormulario(string habilidade)
         {
-            usuario.habilidades.Add(new Habilidades(hab));
-            
+            _logger.LogInformation($"Habilidade recebida: {habilidade} Tamanho; {usuario.habilidades.Count()}");
+            usuario.habilidades.Add(new Habilidades(habilidade));
 
-            return View("Index", usuario);
+            SalvarDados(usuario.habilidades);
+
+            return RedirectToAction("Index", usuario);
         }
 
         public IActionResult Privacy()
@@ -49,6 +54,36 @@ namespace AulaMVC.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        private List<Habilidades> LerDados()
+        {
+            List<Habilidades> hab = new List<Habilidades>();
+            string[] dados = System.IO.File.ReadAllText(Path.Combine(Directory.GetParent(Environment.CurrentDirectory)!.FullName, "db.txt")).Replace("\n", "").Split(" ? ");
+            Console.WriteLine("AQUI:" + dados.ToString());
+            if (dados != null)
+            {
+                Array.Resize(ref dados, dados.Length - 1);
+                foreach (string dado in dados)
+                {
+                    hab.Add(new Habilidades(dado));
+                }
+
+            }
+            return hab;
+
+        }
+
+        public void SalvarDados(List<Habilidades> dados)
+        {
+            foreach (var d in dados)
+            {
+                using (StreamWriter sw = new StreamWriter(Path.Combine(Directory.GetParent(Environment.CurrentDirectory)!.FullName, "db.txt"), true))
+                {
+                    // Escreve a nova habilidade no final do arquivo
+                    sw.WriteLine(d.Nome + "?");
+                }
+            }
         }
     }
 }
