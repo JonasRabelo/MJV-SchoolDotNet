@@ -1,8 +1,11 @@
-﻿namespace LotericaSorteador
+﻿using System.Runtime.InteropServices;
+using System.Text;
+
+namespace LotericaSorteador
 {
     public class Loterica
     {
-        public int[] NumerosLoteria;
+        public int[]? NumerosLoteria;
 
         /// <summary>
         /// Preenche a lista de números da loteria com números sequenciais até um limite.
@@ -71,7 +74,6 @@
                 while (true)
                 {
                     int numeroEscolhido = NumerosLoteria[random.Next(0, NumerosLoteria.Length)];
-
                     if (jogo.Count() > 0)
                     {
                         if (!jogo.Contains(numeroEscolhido))
@@ -83,6 +85,7 @@
                     else
                     {
                         jogo.Add(numeroEscolhido);
+                        break;
                     }
                 }
             }
@@ -124,5 +127,19 @@
                 return new string[] { };
             }
         }
+
+        public string JogoEmString(List<int> jogo)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("[ ");
+            for (int i = 0; i < jogo.Count - 1; i++)
+            {
+                sb.Append(jogo[i] + ", ");
+            }
+            sb.Append(jogo[jogo.Count - 1] + " ]");
+            
+            return sb.ToString();
+        }
+
     }
 }

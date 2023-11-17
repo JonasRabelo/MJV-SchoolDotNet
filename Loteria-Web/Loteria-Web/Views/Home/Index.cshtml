@@ -1,0 +1,18 @@
+﻿@model Models.UsuarioModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form asp-controller="Home" asp-action="VerificarNome" method="post" class="Quadro-Tela">
+
+    <div class="form-group" style="margin: 10px 0px">
+        <label for="nome">Nome:</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Insira seu nome">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+    
+    <div class="d-grid gap-2" style="margin: 5px 0px">
+        <button type="submit" class="btn btn-primary d-lg-block">Próximo</button>
+    </div>
+</form>

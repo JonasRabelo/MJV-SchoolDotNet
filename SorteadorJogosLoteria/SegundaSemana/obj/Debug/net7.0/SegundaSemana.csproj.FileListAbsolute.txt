@@ -44,3 +44,8 @@ C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\L
 C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\LotericaSorteador.pdb
 C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.AssemblyReference.cache
 C:\Temp\MJV-School---.Net\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.CopyComplete
+G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\LotericaSorteador.dll
+G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\bin\Debug\net7.0\LotericaSorteador.pdb
+G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.AssemblyReference.cache
+G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.sourcelink.json
+G:\MJV SCHOOL\MJV SCHOOL\SorteadorJogosLoteria\SegundaSemana\obj\Debug\net7.0\SegundaSemana.csproj.CopyComplete

@@ -20,3 +20,4 @@ C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\ne
 C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\refint\CalculadoraTempoDeVida.dll
 C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.pdb
 C:\Temp\MJV-School---.Net\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\ref\CalculadoraTempoDeVida.dll
+G:\MJV SCHOOL\MJV SCHOOL\ProjetoTempoDeVida\CalculadoraTempoDeVida\obj\Debug\net7.0\CalculadoraTempoDeVida.sourcelink.json

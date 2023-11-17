@@ -1,0 +1,28 @@
+﻿@model Models.UsuarioModel
+
+@{
+    ViewData["Title"] = "Solicitar Saldo";
+}
+<div class="Quadro-Tela">
+    <table>
+        <tbody>
+            <tr>
+                <th>Nome:</th>
+                <td>@Model.Nome</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form asp-controller="Home" asp-action="AdicionarSaldo" method="post">
+        <input type="hidden" name="id" value="@Model.Id"/>
+        <div class="form-group" style="margin: 10px 0px">
+            <label for="saldo">Saldo:</label>
+            <input type="number" name="saldo" class="form-control" placeholder="Informe quanto deseja adicionar de saldo...">
+            @Html.ValidationMessageFor(x => x.Saldo)
+        </div>
+
+        <div class="d-grid gap-2" style="margin: 5px 0px">
+            <button type="submit" class="btn btn-primary d-lg-block">Adicionar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "CalculadoraDeTempoWEB/1.0.0": {
+        "dependencies": {
+          "CalculadoraTempoDeVida": "1.0.0"
+        },
+        "runtime": {
+          "CalculadoraDeTempoWEB.dll": {}
+        }
+      },
+      "CalculadoraTempoDeVida/1.0.0": {
+        "runtime": {
+          "CalculadoraTempoDeVida.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CalculadoraDeTempoWEB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CalculadoraTempoDeVida/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

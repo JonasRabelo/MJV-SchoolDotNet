@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loteria-Web", "Loteria-Web\Loteria-Web.csproj", "{D1C75EC3-37DA-40C2-BF01-39F5298446CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{8BC0F7F6-C9B8-4D5D-A0ED-ADCE71391C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{DC9E71BB-51BD-498B-B8F2-7F54AEDD0C87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1C75EC3-37DA-40C2-BF01-39F5298446CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1C75EC3-37DA-40C2-BF01-39F5298446CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1C75EC3-37DA-40C2-BF01-39F5298446CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1C75EC3-37DA-40C2-BF01-39F5298446CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC0F7F6-C9B8-4D5D-A0ED-ADCE71391C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC0F7F6-C9B8-4D5D-A0ED-ADCE71391C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC0F7F6-C9B8-4D5D-A0ED-ADCE71391C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC0F7F6-C9B8-4D5D-A0ED-ADCE71391C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9E71BB-51BD-498B-B8F2-7F54AEDD0C87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9E71BB-51BD-498B-B8F2-7F54AEDD0C87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9E71BB-51BD-498B-B8F2-7F54AEDD0C87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9E71BB-51BD-498B-B8F2-7F54AEDD0C87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41970DF2-8EFD-4F20-B901-25AE446D159A}
+	EndGlobalSection
+EndGlobal

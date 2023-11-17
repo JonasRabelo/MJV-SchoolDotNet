@@ -1,0 +1,70 @@
+﻿@model List<Models.JogoModel>
+
+@{
+    var usuarioId = Convert.ToInt32(ViewBag.Id as string);
+    ViewData["Title"] = "Listagem de Jogos";
+}
+<div class="text-center Quadro-Lista">
+
+
+    @if (TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            @TempData["MensagemSucesso"]
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">
+                X
+            </button>
+        </div>
+    }
+
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            @TempData["MensagemErro"]
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">
+                X
+            </button>
+        </div>
+    }
+
+    <br />
+    <h1 class="display-4">Listagem de jogos</h1>
+    <table class="table ">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tipo de Jogo</th>
+                <th scope="col">Jogo</th>
+                <th scope="col">Valor</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var jogos in Model)
+                {
+                    <tr>
+                        <th scope="row">@jogos.Id</th>
+                        <td>@jogos.NomeDoJogo</td>
+                        <td>@jogos.Game</td>
+                        <td>R$ @jogos.ValorDoJogo</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a role="button" class="btn btn-danger" asp-route-id="@jogos.Id" asp-route-usuarioId="@jogos.UsuarioId" asp-controller="Home" asp-action="DeletarJogo">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr class="odd"><td valign="top" colspan="5">Nenhum jogo encontrado</td></tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="d-grid gap-2" style="margin: 5px 0px">
+        <a class="btn btn-secondary btn-block" asp-controller="Home" asp-action="Principal" asp-route-id="@usuarioId"  role="button">Voltar</a>
+    </div>
+</div>

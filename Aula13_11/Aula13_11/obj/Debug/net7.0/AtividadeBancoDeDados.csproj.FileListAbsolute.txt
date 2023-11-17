@@ -36,3 +36,4 @@ G:\MJV SCHOOL\MJV SCHOOL\Aula13_11\Aula13_11\obj\Debug\net7.0\refint\AtividadeBa
 G:\MJV SCHOOL\MJV SCHOOL\Aula13_11\Aula13_11\obj\Debug\net7.0\AtividadeBancoDeDados.pdb
 G:\MJV SCHOOL\MJV SCHOOL\Aula13_11\Aula13_11\obj\Debug\net7.0\AtividadeBancoDeDados.genruntimeconfig.cache
 G:\MJV SCHOOL\MJV SCHOOL\Aula13_11\Aula13_11\obj\Debug\net7.0\ref\AtividadeBancoDeDados.dll
+G:\MJV SCHOOL\MJV SCHOOL\Aula13_11\Aula13_11\obj\Debug\net7.0\AtividadeBancoDeDados.sourcelink.json

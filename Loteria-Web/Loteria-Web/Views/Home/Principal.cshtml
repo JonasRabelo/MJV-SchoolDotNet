@@ -1,0 +1,58 @@
+﻿@model Models.UsuarioModel
+
+@{
+    ViewData["Title"] = "Tela Principal";
+}
+
+@if (TempData["MensagemSucesso"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["MensagemSucesso"]
+        <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">
+            X
+        </button>
+    </div>
+}
+
+@if (TempData["MensagemErro"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["MensagemErro"]
+        <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">
+            X
+        </button>
+    </div>
+}
+<div class="Quadro-Tela">
+    <table>
+        <tbody>
+            <tr>
+                <th>Olá </th>
+                <td>@Model.Nome</td>
+            </tr>
+            <tr>
+                <th>Seu saldo atual:  </th>
+                <td>R$ @Model.Saldo</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="menu-item">
+                <a asp-controller="Home" asp-action="Criar" asp-route-id="@Model.Id" method="post" class="navbar-brand mb-0 h1">Novo Jogo </a>
+            </div>
+            <div class="menu-item">
+                <a asp-controller="Home" asp-action="ListarJogos" asp-route-id="@Model.Id" method="post" class="navbar-brand mb-0 h1">Ver Jogos </a>
+            </div>
+            <div class="menu-item">
+                <a asp-controller="Home" asp-action="SolicitarSaldo" asp-route-id="@Model.Id" method="post"  class="navbar-brand mb-0 h1">Adicionar Saldo </a>
+            </div>
+            <div class="menu-item">
+                <a asp-controller="Home" asp-action="Sair" class="navbar-brand mb-0 h1">Sair </a>
+            </div>
+        </div>
+    </div>
+</div>

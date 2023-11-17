@@ -1,0 +1,25 @@
+﻿@using Loteria_Web.Enums
+@model Models.JogoModel
+
+@{
+    var usuarioId = Convert.ToInt32(ViewBag.Id as string);
+    ViewData["Title"] = "Criando Jogo";
+}
+
+<form asp-controller="Home" asp-action="CriarJogo" method="post" class="Quadro-Tela">
+    <div class="form-group" style="margin: 10px 0px">
+        <label for="perfil">Tipo de jogo:: </label>
+        <select asp-for="NomeDoJogo" class="form-control">
+            <option value="">Selecione</option>
+            <option value="@JogosEnums.MegaSena">MegaSena</option>
+            <option value="@JogosEnums.LotoMania">LotoMania</option>
+            <option value="@JogosEnums.LotoFacil">LotoFacil</option>
+            <option value="@JogosEnums.Quina">Quina</option>
+        </select>
+        @Html.ValidationMessageFor(x => x.NomeDoJogo)
+    </div>
+    <input type="hidden" name="usuarioId" value="@usuarioId" />
+    <div class="d-grid gap-2" style="margin: 5px 0px">
+        <button type="submit" class="btn btn-primary d-lg-block">Gerar Jogo</button>
+    </div>
+</form>

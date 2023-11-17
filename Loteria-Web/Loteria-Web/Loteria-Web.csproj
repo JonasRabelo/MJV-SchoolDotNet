@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Loteria_Web</RootNamespace>
+    <UserSecretsId>56abe957-9f72-4b60-9357-f2c2cb2a0f87</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LotericaSorteador">
+      <HintPath>..\..\SorteadorJogosLoteria\LotericaSorteador\bin\Debug\net7.0\LotericaSorteador.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

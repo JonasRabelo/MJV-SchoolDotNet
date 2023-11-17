@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "grmDhboPcCShz4BTEBwGDJEShk9tgz+SxkaZIdnj8kPMTkpCCz5L3xRgWY673PaRX3TPzUpHPiAOxxNSHPQfuw==",
+  "dgSpecHash": "IEQGUquID5f329HYSV5UZ8f5XjzOyhvvat4fTE2iBUw0LszI0GxHdv/HQJ/ba8M2qLEsr7n3jIXmZ8Fcqx2Beg==",
   "success": true,
-  "projectFilePath": "C:\\Temp\\MJV-School---.Net\\SorteadorJogosLoteria\\LotericaSorteador\\LotericaSorteador.csproj",
+  "projectFilePath": "G:\\MJV SCHOOL\\MJV SCHOOL\\SorteadorJogosLoteria\\LotericaSorteador\\LotericaSorteador.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Manutenção\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Manutenção\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+    "C:\\Users\\jonas\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\jonas\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
   ],
   "logs": []
 }

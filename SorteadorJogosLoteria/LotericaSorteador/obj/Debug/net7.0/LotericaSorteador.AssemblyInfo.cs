@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LotericaSorteador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96f20993fbecbfc5661dc78f81c48db63033720e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LotericaSorteador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LotericaSorteador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
